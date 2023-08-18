@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation.min.css">
+    <script src="https://kit.fontawesome.com/6843eb44d6.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.3/chart.min.js" integrity="sha512-fMPPLjF/Xr7Ga0679WgtqoSyfUoQgdt8IIxJymStR5zV3Fyb6B3u/8DcaZ6R6sXexk5Z64bCgo2TYyn760EdcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <hr>
+    <h1>PORTFOLIO</h1>
+    <hr>
+    <div class="container">
+        <img class="logo" src="368603998_831460061702733_2437249923735040611_n.jpg" alt="">
+        <h2 class="name">PHOONSUP AUNGHUAB</h2>
+        <span class="slogan">"บางทีมันก็น้อยใจ แต่อย่าให้อะไรมันน้อยลง"</span>
+        <div class="social-img">
+            <ul>
+                <li><a href="#" target="_blank"></a><i class="fa fa-brands fa-instagram"></i></li>
+                <li><a href="#" target="_blank"></a><i class="fa-brands fa-line"></i></li>
+                <li><a href="#" target="_blank"></a><i class="fa-brands fa-facebook"></i></li>
+            </ul>
+            <p class="bio">
+              Name:Phoonsup Aunghuab <br>
+              Nickname:Boom <br>
+              Birt้day:November 20, 2003 <br>
+              nationality:Thai <br>
+              religion:Buddhist <br>
+              height:186 <br>
+              weight:85
+            </p>
+        </div>
+    </div>
+<hr>
+<div>
+  <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['sleep', 'game', 'movie'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 5,],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+<hr>
+
+<div class="footer">
+    Phoonsup Aunghuab &copy;
+    <script>
+        document.write(new Data().getFullYear())
+    </script>.Portfolio Phoonsup
+</div>
+
+</body>
+</html>
